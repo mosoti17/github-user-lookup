@@ -1,0 +1,21 @@
+{
+  "name": "github-user-lookup",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "elvis <mosoti17@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/mosoti17/github-user-lookup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}
