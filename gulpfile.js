@@ -8,6 +8,8 @@ var utilities = require('gulp-util');
 var del = require('del');
 var buildProduction = utilities.env.production;
 var browserSync = require('browser-sync').create();
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var lib = require('bower-files')({
   "overrides":{
     "bootstrap" : {
@@ -50,7 +52,8 @@ gulp.task("build", ['clean'], function(){
   } else {
     gulp.start('jsBrowserify');
   }
-
+  gulp.start('bower');
+  gulp.start('cssBuild');
 });
 gulp.task('serve', function() {
   browserSync.init({
