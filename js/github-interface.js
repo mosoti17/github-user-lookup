@@ -8,7 +8,7 @@ $(document).ready(function() {
     var user = $('#username').val();
     Github(user);
     repos(user);
-    // $('#serch').text("You serched for"+" "+ user);
+     $('#serch').text("You serched for"+" "+ user);
     console.log(user);
     });
   });

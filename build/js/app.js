@@ -17,6 +17,8 @@ function Github(user) {
 }
 function repos(user) {
   $.get('https://api.github.com/users/'+user+'/repos?access_token=' + apiKey).then(function(response){
+    $('table').text('');
+    $('table').append('<tr><td>'+'Repo name'+'</td><td>'+'Repo details'+'</td></tr>');
     for(var i=0; i<response.length;i++){
       $('table').append('<tr><td>'+response[i].name+'</td><td>'+response[i].description+'</td></tr>');
       //console.log(response[i].name);
@@ -44,7 +46,7 @@ $(document).ready(function() {
     var user = $('#username').val();
     Github(user);
     repos(user);
-    // $('#serch').text("You serched for"+" "+ user);
+     $('#serch').text("You serched for"+" "+ user);
     console.log(user);
     });
   });
