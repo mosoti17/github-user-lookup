@@ -14,7 +14,7 @@ function Github(user) {
 function repos(user) {
   $.get('https://api.github.com/users/'+user+'/repos?access_token=' + apiKey).then(function(response){
     $('table').text('');
-    $('table').append('<tr><td>'+'Repo name'+'</td><td>'+'Repo details'+'</td></tr>');
+    $('table').append('<tr><td><h2>'+'Repo name'+'</h2></td><td><h2>'+'Repo details'+'</h2></td></tr>');
     for(var i=0; i<response.length;i++){
       $('table').append('<tr><td>'+response[i].name+'</td><td>'+response[i].description+'</td></tr>');
       //console.log(response[i].name);
