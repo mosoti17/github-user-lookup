@@ -1,9 +1,9 @@
 var apiKey = require('./../.env').apiKey;
 function Github(user) {
   $.get('https://api.github.com/users/'+user+'?access_token=' + apiKey).then(function(response){
-    $('#name').text(response.name );
+    $('#name').text( response.name );
     $('#name').append('<p>'+'<img src="'+response.avatar_url+'">'+'</p>');
-    $('#name').append('<p>'+response.public_repos+'</p>');
+    $('#name').append('<p>'+response.public_repos+' Repos '+'</p>');
     // console.log(response.avatar_url);
     // console.log(response.public_repos);
 

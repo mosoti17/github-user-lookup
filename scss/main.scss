@@ -1,19 +1,52 @@
 h1{
   text-align: center;
+  color: #e2f442;
+  font-size: 400%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.main{
-  background-color: #fff;
+h3{
+  text-align: center;
+  color: white;
+  margin-bottom: 4%;
+}
+body{
+background-image: url("./../../git.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
 }
 #input{
   text-align: center;
+  margin-bottom: 2%;
 }
-
+#lookup{
+  margin-left: 30px;
+  background-color: #416df4;
+}
+#username{
+  width: 40%;
+  height: 30px;
+}
 img{
   height: 200px;
   width: 200px;
 }
 tr:nth-child(odd){background-color: #f2f2f2}
+tr:nth-child(even){background-color:#819b8e }
 th, td {
     text-align: left;
     padding: 8px;
+}
+td {
+  border: 2px solid black;
+}
+#name{
+  color: white;
+  font-size: 200%;
+  p{
+    font-size: 70%;
+    padding-top: 30px;
+    color: #8b9b81;
+  }
 }
